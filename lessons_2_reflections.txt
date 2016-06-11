@@ -1,0 +1,29 @@
+1.What happens when you initialise a repository? Why do you need it?
+
+When we initialise a directory (do this by creating a .git file)
+(by git init) , we basically now can keep track of commits and changes.
+The files in a directory can be added to the repository and hence 
+the version conttrol can now be applied(not the right word).
+We need it to apply(dammit) version control.
+
+************************************************************************
+
+2.How is the staging area different from the working directory and the
+repository? What value do you think it offers ?
+
+The staging area , as the name suggests , is the intermediate "area"
+between repository and working directory. It would be natural to 
+consider certain specific files to be aletred by a single commit.
+For example , lets say there is a directory differnt files for 
+differnt recipes.
+Files related to cake and baking should be altered in a single commit 
+as changes in one can possibly affect the others. 
+Whereas a recipe for pizza , having no relationship whatsoever , 
+should not be in the same commit as the cake ones. It should have
+its own separate commit.
+
+Staging area offers this feature of SELECTING which multiple files(if)
+to be under a single commit.
+
+************************************************************************
+
