@@ -1,0 +1,88 @@
+*****                                                            *****
+**********                                                 ***********
+***********************REFLECTIONS LESSON 1***************************
+
+1. How did viewing a diff between two diferent versions of a file help
+ you see the bug that was introduced ?
+
+
+If we modify a file , it is good to save it's previous version as well.
+This way we will know the changes that we introduced and in case the new version fails to run properly , we can pinpoint to these changes by using the DIFF command.
+(FC command in case of Windows).
+Now that we know the changes that were made , we can check for any typos  , syntax errors and other possible mistakes easily.
+Hence , finding a bug becomes easier and so does fixing it.
+**********************************************************************
+
+2. How could having easy access to the entire history of a file make
+ you a more efficient pogrammer in the long term ?
+
+
+As I wrote previously , we can know what changes were made and when. 
+This way , if a file fails to run we can restore it back to the previous bug-free file.
+We can even use diff to spot and rectify the errors.
+Moreover , we can keep a track of every development to the file and a particular version can even be used as a base for some other file.
+**********************************************************************
+
+3. What do you think are the pros and cons of manually choosing when to
+ create a commit like you do in Git vs having versions automatically 
+ saved , like Google Docs does ?
+
+
+The manual options gives you the flexibility to decide whether a sensible enough change has been made.
+This is better against other VCSs which save verions automatically,
+as it will help in saving only the working files as well as with just
+the right amount of changes made.
+The not-so-bright side however, is the fact that there may occur human faults such as
+ negligence to save(even forgetting) and then you have power cuts (damn , them).
+Overall , manual > automatic . 
+**********************************************************************
+
+4.Why do you think some version control sysytems , like Git , allow 
+saving multiple files in one commit, while others, like Google Docs
+treat each file separately ?
+
+
+Saving multiple files is a better option as changes made to one file
+in a project where files are interlinked can affect others as well.
+Making different commits to reproduce the same overall 
+change in the project for different files results in crowding and 
+unnecessary details for the users.
+Follow the rule , 1 logical change (for the whole project)= 1 commit.
+***********************************************************************
+
+5.How can you use the commands git log and git diff to view the history
+ of files ?
+
+
+ Git offers the command git log to see the history of all commits made 
+ to the repository. The details include short , precise comments which
+ tells the changes introduced(in plain English) in that commit.
+ To get more details, such as changes in code , we can use git diff
+ to compare the files before and after that particular commit is 
+ made.
+ So you have a complete history of the repository files at different
+ stages.
+**********************************************************************
+
+ 6.How might using version control make you more confident to make
+  changes that could break something ?
+
+
+  Because using versionn control lets you switch back to the version
+  with the changes reverted. This way we can make changes (in order to 
+  experiment) without the fear of breaking the filesystem as those 
+  changes can be easily reverted. You can now be a succesful risk-
+  taker. Kudos!
+***********************************************************************
+
+7. Not that you have your workpace set up, what do you want to try
+using Git for ?
+
+I would , now , like to create some files with some super cool code
+related to some awesome project(AI is at the back of my mind).
+(Software that writes code when you give it the algorithm).
+And moreover , I would collaborate it with other people on Hub , 
+get their help , use version control often and land on to become a 
+good programmer.
+
+***********************************************************************
