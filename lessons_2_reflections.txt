@@ -27,3 +27,22 @@ to be under a single commit.
 
 ************************************************************************
 
+3.How can you use the staging area to make sure you have one commit per
+logical change ?
+
+The use of git diff (all kinds of it) are put to use here. We make some
+changes to the file in the working directory and then we can compare
+them with the the file versions in the staging area as well as the
+versions in the most recent commit.(the latter two will be initially same).
+BY comparing the files in staging area and the working directory (git diff), we
+can see what changes we have made and then decide which changes to 
+include to the staging area.
+For example say you made changes to two files(one logical change per
+file) , then add only one of the updated files to the staging area
+using (git add) and then git commit. And after this the other commit
+for another file.
+git diff --staged is used to find the differences between the file 
+versions in the staging area and the ones in the recent commit.
+git reset --hard to discard any changes between the file versions in 
+the working directory and the staging area.
+ 
