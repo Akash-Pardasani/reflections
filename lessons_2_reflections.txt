@@ -46,3 +46,59 @@ versions in the staging area and the ones in the recent commit.
 git reset --hard to discard any changes between the file versions in 
 the working directory and the staging area.
  
+***********************************************************************
+
+4.What are some situations when branches would be helpful in keeping
+your history organized ? How would branches help ?
+
+Branches make it easy to take risks and pursue those experimental features 
+you want to add to your main project without affecting its development
+in any way.
+Say you wanted an extra feature which was initially not a part , you 
+add it , commit it and the master file is updated. But then say , you dont 
+want to submit this and would like the original file without this feature, 
+but with some changes to it. This makes things complicated.(Refer to the 
+diagram in the video).
+So , instead we create a branch for this experimental change and continue 
+to code for it , whle developing the original file simultaneously. If the 
+experimental change turns out to be fine , you can merge it to the main
+file and voila , not much trouble now.
+Everything becomes organized.
+
+*************************************************************************
+
+5.How do diagrams help you to visualize branch structure ?
+
+Oh boy , they are the only way to understand it. Well , it tells you 
+what branches originated at what point and what further commits were made on
+that branch , master branch or other branches. The diagrams help in understanding 
+what will be the output of git log commit when used at different pinnts in different 
+branches.
+They help a lot.
+
+************************************************************************
+
+6. What is the result of merging two branches together? Why do we 
+represent it in the diagram the way we do ?
+
+Merging of branches helps in succesfully incorporating the experimental
+changes that you thought of adding to the file. So , if the features 
+work in the branch you might wanna add it to the main file. Hence,
+merge.
+Representing it in the diagrams help in undersatnding the merging 
+process better(it's the only way) and what else are you here for,
+but understand.
+
+************************************************************************
+
+7. What are the pros and cons of Git's automatic merging vs. always doing merges manually ?
+
+Git's automatic merging saves time and you wont have to waste time
+figuring out the changes and their effects. But it doesn't always work.
+Cases when two different users have introduced two different changes,
+automatic merging is the better option.
+But say , they introduced two similar changes , it would be rather
+counter-helpful(what's the word , dammit) as the merged code would not
+even work. Here , manual merging would help in deciding the more 
+efficient change and merge that or incorporate a rather better change.
+  
