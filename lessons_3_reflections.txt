@@ -22,3 +22,13 @@ required by me. Pulling them manually lets me keep a check on what i would like 
  something else is building entirely. He wouldn't want such modifications , so I would rather like to make my own
  project but I need the existing files and versions. So I would fork it to create a new repository on Github.
  I would clone someting when I want somebody's work and I want to use it for myself , rather than sharing it .
+
+************************************************************************
+
+4.What is the benefit of having a copy of the last known state of the remote stored locally?
+
+Well , it will help us in keeping track of the changes we have made
+locally and what changes have been made on GitHub. Sometimes we would
+like to change the changes we have made locally and merge them with 
+the ones made on GitHub by someone else. Here , having the copy of
+last known remote helps.See - Git fetch.
