@@ -13,4 +13,12 @@ want to pull all those commits to my remote as some of them wont be
 required by me. Pulling them manually lets me keep a check on what i would like on my local repository.
 
 ***********************************************************************
+ 3. Describe the differennces between forks , clones and branches. When would you use one instead of the other ?
  
+ Forking a repository means "cloning" an existing git repository onto your github account. Forking refers to the process
+ of cloning a repository on to your remote pc , adding a remote and then pushing it to GitHub. Cloning is the process
+ of getting a copy of the git repository on to your local pc.
+ Branches are a completely different thing. Forking is used when , say I want to build a modified version of 
+ something else is building entirely. He wouldn't want such modifications , so I would rather like to make my own
+ project but I need the existing files and versions. So I would fork it to create a new repository on Github.
+ I would clone someting when I want somebody's work and I want to use it for myself , rather than sharing it .
